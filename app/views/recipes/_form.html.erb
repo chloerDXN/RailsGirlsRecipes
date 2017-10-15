@@ -12,6 +12,16 @@
   <% end %>
 
   <div class="field">
+    <%= form.label :Name %>
+    <%= form.text_field :Name, id: :recipe_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :picture %>
+    <%= form.file_field :picture, id: :recipe_picture %>
+  </div>
+
+  <div class="field">
     <%= form.label :ingredients %>
     <%= form.text_field :ingredients, id: :recipe_ingredients %>
   </div>
@@ -22,8 +32,8 @@
   </div>
 
   <div class="field">
-    <%= form.label :picture %>
-    <%= form.text_field :picture, id: :recipe_picture %>
+    <%= form.label :rating %>
+    <%= form.text_field :ratings, id: :recipe_ratings %>
   </div>
 
   <div class="actions">
